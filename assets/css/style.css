@@ -1,0 +1,477 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+}
+
+html, body {
+  height: 100%;
+}
+
+section {
+  padding: 90px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: "Ropa Sans", sans-serif;
+}
+
+p {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000;
+  font-weight: normal;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-trans {
+  background-color: transparent;
+}
+
+.title-default {
+  font-family: "Ropa Sans", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.title-helper {
+  font-family: "Ropa Sans", sans-serif;
+  color: #000;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.my-btn {
+  background-color: #f20000;
+  font-family: "Ropa Sans", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  padding: 9px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+.my-btn:hover {
+  background-color: #f20000;
+  color: #fff;
+}
+
+.my-btn:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.my-btn-alt {
+  background-color: #000;
+}
+
+.my-btn-alt:hover {
+  background-color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px 1px #000 inset;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: 999999999;
+}
+
+.top-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.top-header h2 {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.top-header h2 a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-right: 10px;
+}
+
+.top-header h2 span {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.top-header button {
+  font-size: 15px;
+  font-family: "Ropa Sans", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  background-color: transparent;
+  border: none;
+  padding-right: 0;
+  padding: 0;
+  word-spacing: 1px;
+}
+
+.top-header button:hover,
+.top-header button:active,
+.top-header button:focus,
+.top-header button:visited {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.top-header button span {
+  font-style: normal;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+
+.top-header .table {
+  margin-bottom: 0;
+}
+
+.top-header .table-borderless th {
+  padding-right: 30px;
+}
+
+.top-header .table-borderless th a, .top-header .table-borderless td a {
+  color: #fff;
+}
+
+.top-header .dropdown-menu {
+  padding: 10px;
+  background-color: #160006;
+}
+
+.main-navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.main-navbar .navbar-brand img {
+  width: 100px;
+}
+
+.fixed-top .navbar-brand img {
+  width: 60px;
+}
+
+.fixed-top {
+  padding: 0;
+  background-color: #160006;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #ddd;
+}
+
+.nav-request {
+  background-color: #f20000 !important;
+  font-family: "Ropa Sans", sans-serif;
+  color: #fff;
+  font-size: 20px !important;
+  padding: 9px 15px !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+  border-radius: 3px;
+  letter-spacing: 1px !important;
+}
+
+#home {
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#home::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.hero-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.hero-text h1 {
+  color: #fff;
+  font-size: 54px;
+  line-height: 54px;
+  font-weight: 600;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin: 30px 0;
+  font-weight: 300;
+}
+
+.testimonials {
+  background-image: url("../images/Inferno-Martial-Arts_Footer.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.testimonials::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.testimonials .carousel-item {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.testimonials img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-bottom: 50px;
+}
+
+.testimonials p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.testimonials h5 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.testimonials i {
+  color: #FCAF17;
+}
+
+.request-info {
+  background-color: #f20000;
+}
+
+.request-info p, .request-info .title-default, .request-info .title-helper {
+  color: #fff;
+}
+
+.footer-top {
+  background-image: url("../images/Inferno-Martial-Arts_Footer.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.footer-top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.footer-top h3 {
+  color: #fff;
+  font-family: "Ropa Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.footer-top h5 {
+  color: #fff;
+  font-family: "Ropa Sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-top p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.footer-logo {
+  max-width: 100px;
+}
+
+.footer-address-map {
+  max-width: 240px;
+  margin-top: 25px;
+}
+
+.footer-top .nav-link {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.nav-footer-address .nav-link {
+  padding-left: 0;
+  position: relative;
+  margin-left: 25px;
+  margin-bottom: 0;
+}
+
+.nav-footer-address .nav-link i {
+  position: absolute;
+  top: 6px;
+  left: -25px;
+}
+
+.nav-footer-social .nav-link {
+  padding-left: 0;
+}
+
+.nav-footer-social .nav-link i {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 100%;
+  color: #000;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.nav-footer-social .nav-link i:hover {
+  background-color: #fff;
+}
+
+.nav-navigation .nav-link {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.nav-navigation > .nav-item > .nav-link {
+  padding-left: 0;
+}
+
+.footer-bottom {
+  background-color: #090002;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.footer-bottom p, .footer-bottom a {
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .fixed-top {
+    background-color: #252525;
+  }
+
+  .navbar-light .navbar-toggler {
+    color: #ddd;
+  }
+}
+@media (max-width: 575px) {
+  section {
+    padding: 30px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
