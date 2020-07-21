@@ -14,7 +14,7 @@
 	<title>Gym Lead</title>
 
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
 
 	<!-- Font Awesome v5.7.2 -->
@@ -67,16 +67,17 @@
 						</div>
 					</div>
 
-				</div>
+				</div><!-- //.row -->
 
-			</div>
+			</div><!-- //.container -->
 		</div><!-- //.top-header -->
 
+		<!-- Main Navigation -->
 		<div id="navigation" class="main-navbar">
 			<div class="container">
 
 				<nav class="navbar navbar-expand-lg navbar-light">
-					<a class="navbar-brand" href="index.php">
+					<a class="navbar-brand" href="./">
 						<img src="assets/images/Logo.png" alt="">
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,36 +87,58 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="#home">Home</a>
+								<a class="nav-link" href="./">Home</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Programs
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Kid’s Martial Arts</a>
+									<a class="dropdown-item" href="#">Teen’s Martial Arts</a>
+									<a class="dropdown-item" href="#">Brazilian Jiu Jitsu</a>
+									<a class="dropdown-item" href="#">Kickboxing</a>
+									<a class="dropdown-item" href="#">Group Fitness (Bentonville Only)</a>
+								</div>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#about">About</a>
+								<a class="nav-link" href="#">Blog</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#services">Services</a>
+								<a class="nav-link" href="#">Instructors</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Contact
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Bentonville, AR</a>
+									<a class="dropdown-item" href="#">Springdale, AR</a>
+									<a class="dropdown-item" href="#">Rogers, AR</a>
+								</div>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#contact">Contact</a>
+								<a class="nav-link" href="">Members</a>
 							</li>
 						</ul>
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a class="nav-link nav-request" href="#home">Request Information</a>
+								<a class="nav-link btn-nav-request" href="#home">Request Information</a>
 							</li>
 						</ul>
 					</div>
-				</nav>	
+				</nav><!-- //.nav -->
 
-			</div>
-		</div><!-- //.main-navbar -->
+			</div><!-- //.container -->
+		</div><!-- //.main-navigation -->
 	</section><!-- //Section Header End -->
 
 
 
 
 
-	<!-- Section Home Start -->
-	<section id="home" class="bg-trans">
+	<!-- Section Hero Start -->
+	<section class="hero-section bg-trans">
 		<div class="hero-inner">
 			<div class="hero-content">
 				<div class="container">
@@ -131,17 +154,158 @@
 
 					</div><!-- //.row -->
 
-				</div><!-- //.container -->		
+				</div><!-- //.container -->
 			</div>
 		</div>
-	</section><!-- //Section Home End -->
+	</section><!-- //Section Hero End -->
+
+
+
+
+
+	<!-- Section Select Tournament Start -->
+	<section class="select-tournament bg-alt">
+		<div class="container-fluid">
+			
+			<div class="row align-items-center">
+				
+				<div class="col-md-4">
+					<h2 class="title-default mb-0 text-center text-md-right">SELECT A PROGRAM</h2>
+				</div>
+				<div class="col-md-8">
+					<div class="select-tournament-form">
+						<div class="row">
+							<div class="col-md-4">
+								<h2 class="title-default">REQUEST MORE INFO</h2>
+								<p class="title-helper">ABOUT OUR CLASSES</p>
+								<p class="text-16">Secure your spot and get started today with our EXCLUSIVE offer!</p>
+							</div>
+							<div class="col-md-8">
+								<form accept="#" method="post">
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<input type="text" class="form-control" placeholder="Full Name*">
+										</div>
+										<div class="form-group col-md-4 p-md-0">
+											<input type="email" class="form-control" placeholder="Email*">
+										</div>
+										<div class="form-group col-md-4">
+											<input type="tel" class="form-control" placeholder="Phone*">
+										</div>
+									</div>
+									<div class="form-group">
+										<select id="inputState" class="form-control">
+											<option value="" selected disabled>Select a Program*</option>
+											<option value="Kid’s Martial Arts">Kid’s Martial Arts</option>
+											<option value="Teen’s Martial Arts">Teen’s Martial Arts</option>
+											<option value="Brazilian Jiu Jitsu">Brazilian Jiu Jitsu</option>
+											<option value="Kickboxing">Kickboxing</option>
+											<option value="Group Fitness (Bentonville Only)">Group Fitness (Bentonville Only)</option>		
+										</select>
+									</div>
+									<div class="form-group">
+										<select id="inputState" class="form-control">
+											<option value="" selected disabled>Select Location*</option>
+											<option value="Bentonville, AR">Bentonville, AR</option>
+											<option value="Springdale, AR">Springdale, AR</option>
+											<option value="Rogers, AR">Rogers, AR</option>
+										</select>
+									</div>
+									<button type="submit" class="btn btn-block my-btn my-btn-alt">Get started now</button>
+								</form>
+								<small>By opting into the web form above you are providing consent for Inferno Martial Arts to send you periodic text messages. Standard rates may apply. You can reply HELP at anytime or learn more. You may opt-out anytime by replying STOP.</small>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- //.row -->
+
+		</div><!-- //.container -->
+	</section><!-- //Section Select Tournament End -->
+
+
+
+
+
+	<!-- Section Tournaments Start -->
+	<section class="tournaments bg-white">
+		<div class="container">
+
+			<div class="row no-gutters justify-content-center">
+
+				<div class="col-md-6 col-lg-4">
+					<div class="tournaments-wrapper">
+						<img src="assets/images/thumb-kids-1.jpg" alt="" class="img-fluid">
+						<div class="tournaments-box">
+							<h3>Kid’s Martial Arts</h3>
+							<div class="tournaments-info">
+								<p>Give your kids the lifelong gifts of personal success, confidence, discipline, and self-defense!</p>
+								<a href="" class="btn my-btn my-btn-alt">View more information</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="tournaments-wrapper">
+						<img src="assets/images/thumb-kids-1.jpg" alt="" class="img-fluid">
+						<div class="tournaments-box">
+							<h3>Kid’s Martial Arts</h3>
+							<div class="tournaments-info">
+								<p>Give your kids the lifelong gifts of personal success, confidence, discipline, and self-defense!</p>
+								<a href="" class="btn my-btn my-btn-alt">View more information</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="tournaments-wrapper">
+						<img src="assets/images/thumb-kids-1.jpg" alt="" class="img-fluid">
+						<div class="tournaments-box">
+							<h3>Kid’s Martial Arts</h3>
+							<div class="tournaments-info">
+								<p>Give your kids the lifelong gifts of personal success, confidence, discipline, and self-defense!</p>
+								<a href="" class="btn my-btn my-btn-alt">View more information</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="tournaments-wrapper">
+						<img src="assets/images/thumb-kids-1.jpg" alt="" class="img-fluid">
+						<div class="tournaments-box">
+							<h3>Kid’s Martial Arts</h3>
+							<div class="tournaments-info">
+								<p>Give your kids the lifelong gifts of personal success, confidence, discipline, and self-defense!</p>
+								<a href="" class="btn my-btn my-btn-alt">View more information</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="tournaments-wrapper">
+						<img src="assets/images/thumb-kids-1.jpg" alt="" class="img-fluid">
+						<div class="tournaments-box">
+							<h3>Kid’s Martial Arts</h3>
+							<div class="tournaments-info">
+								<p>Give your kids the lifelong gifts of personal success, confidence, discipline, and self-defense!</p>
+								<a href="" class="btn my-btn my-btn-alt">View more information</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- //.row -->
+
+		</div><!-- //.container -->
+	</section><!-- //Section Tournaments End -->
 
 
 
 
 
 	<!-- Section View Programs Start -->
-	<section class="view-programs bg-white p-0">
+	<section class="view-programs bg-alt p-0">
 		<div class="container-fluid p-0">
 
 			<div class="row no-gutters align-items-center">
@@ -157,9 +321,9 @@
 					<img src="assets/images/iStock-509622872.jpg" alt="" class="img-fluid">
 				</div>
 
-			</div>
+			</div><!-- //.row -->
 
-		</div>
+		</div><!-- //.container -->
 	</section><!-- //Section View Programs End -->
 
 
@@ -217,9 +381,9 @@
 					</div>
 				</div>
 
-			</div>
+			</div><!-- //.row -->
 
-		</div>
+		</div><!-- //.container -->
 	</section><!-- //Section Testimonials End -->
 
 
@@ -243,9 +407,9 @@
 					<a href="#" class="btn my-btn">View Our NWA BJJ Program</a>
 				</div>
 
-			</div>
+			</div><!-- //.row -->
 
-		</div>
+		</div><!-- //.container -->
 	</section><!-- //Section View Programs End -->
 
 
@@ -265,9 +429,9 @@
 					<a href=""class="btn my-btn my-btn-alt">Get Started Today</a>
 				</div>
 
-			</div>
+			</div><!-- //.row -->
 
-		</div>
+		</div><!-- //.container -->
 	</section><!-- //Section Request Info End -->
 
 

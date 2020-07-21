@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   background-color: #f8f9fa;
 }
 
@@ -17,8 +17,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-size: 17px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 24px;
   color: #000;
   font-weight: normal;
 }
@@ -27,8 +27,33 @@ a:hover {
   text-decoration: none;
 }
 
+.text-16 {
+  font-size: 16px;
+}
+
+.form-control {
+  padding: 12px;
+  height: inherit;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
 .bg-white {
   background-color: #fff;
+}
+
+.bg-alt {
+  background-color: #e9e9e9;
 }
 
 .bg-trans {
@@ -42,7 +67,7 @@ a:hover {
   line-height: 40px;
   text-transform: uppercase;
   color: #000;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .title-helper {
@@ -51,7 +76,7 @@ a:hover {
   font-size: 28px;
   line-height: 28px;
   font-weight: normal;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-style: italic;
 }
 
@@ -131,7 +156,7 @@ a:hover {
 
 .top-header h2 span {
   font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
@@ -225,7 +250,7 @@ a:hover {
   color: #ddd;
 }
 
-.nav-request {
+.btn-nav-request {
   background-color: #f20000 !important;
   font-family: "Ropa Sans", sans-serif;
   color: #fff;
@@ -237,7 +262,7 @@ a:hover {
   letter-spacing: 1px !important;
 }
 
-#home {
+.hero-section {
   height: 100%;
   position: relative;
   z-index: 0;
@@ -246,7 +271,7 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-#home::after {
+.hero-section::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -283,6 +308,106 @@ a:hover {
   color: #fff;
   margin: 30px 0;
   font-weight: 300;
+}
+
+.select-tournament {
+  padding: 20px;
+}
+
+.select-tournament .title-default {
+  font-size: 30px;
+}
+
+.select-tournament .title-helper {
+  font-size: 24px;
+}
+
+.select-tournament-form {
+  background-color: #f20000;
+  padding: 35px;
+  margin-top: -150px;
+  margin-bottom: -150px;
+  z-index: 9999999999999;
+  position: relative;
+}
+
+.select-tournament-form .title-default, .select-tournament-form .title-helper, .select-tournament-form p, .select-tournament-form small {
+  color: #fff;
+}
+
+.select-tournament-form small {
+  font-size: 13px;
+  line-height: 18px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.tournaments-wrapper {
+  margin: 5px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.tournaments-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.tournaments-wrapper:hover::after {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.tournaments-box {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 10px 35px;
+  z-index: 5555;
+  transition: 0.5s;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+}
+
+.tournaments-info {
+  display: none;
+  padding-bottom: 25px;
+  transition: 5s;
+}
+
+.tournaments-wrapper:hover .tournaments-info {
+  display: block;
+}
+
+.tournaments-wrapper:hover .tournaments-box {
+  background-color: transparent;
+}
+
+.tournaments-box h3, .tournaments-box p {
+  color: #fff;
+}
+
+.tournaments-box h3 {
+  font-family: "Ropa Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.tournaments-box p {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.tournaments-box .my-btn-alt {
+  border: 2px solid #fff;
+  font-size: 15px;
 }
 
 .testimonials {
