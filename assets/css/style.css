@@ -8,7 +8,7 @@ html, body {
 }
 
 section {
-  padding: 90px 0;
+  padding: 60px 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -134,8 +134,8 @@ a:hover {
 }
 
 .top-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -168,7 +168,7 @@ a:hover {
   background-color: transparent;
   border: none;
   padding-right: 0;
-  padding: 0;
+  padding: 15px 0;
   word-spacing: 1px;
 }
 
@@ -192,6 +192,7 @@ a:hover {
 
 .top-header .table-borderless th {
   padding-right: 30px;
+  font-weight: 600;
 }
 
 .top-header .table-borderless th a, .top-header .table-borderless td a {
@@ -335,7 +336,7 @@ a:hover {
 }
 
 .select-tournament {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .select-tournament .title-default {
@@ -608,18 +609,109 @@ a:hover {
   font-size: 14px;
 }
 
+@media (max-width: 1199px) {
+  .top-header h2 span {
+    display: block;
+  }
+
+  .hero-text h1 {
+    font-size: 45px;
+  }
+
+  .btn-nav-request {
+    font-size: 18px !important;
+  }
+}
 @media (max-width: 991px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .top-header h2 span {
+    display: none;
+  }
+
+  .top-header table {
+    width: 300px;
+  }
+
   .fixed-top {
-    background-color: #252525;
+    background-color: #160006;
+  }
+
+  .navbar-collapse {
+    background-color: #160006;
+    padding-bottom: 35px;
   }
 
   .navbar-light .navbar-toggler {
     color: #ddd;
   }
+
+  .hero-text h1 {
+    font-size: 50px;
+  }
+
+  .select-tournament-form {
+    margin-bottom: inherit;
+  }
+
+  .select-tournament {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .my-btn {
+    font-size: 18px;
+  }
+
+  .title-default {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .title-helper {
+    font-size: 18px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .select-tournament-form {
+    margin-top: -190px;
+  }
+
+  .testimonials .carousel-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-top h3 {
+    font-size: 18px;
+  }
+
+  .footer-top h5 {
+    font-size: 16px;
+  }
+
+  .tournaments-box h3 {
+    font-size: 20px;
+  }
 }
 @media (max-width: 575px) {
   section {
     padding: 30px 0;
+  }
+
+  .top-header h2 a {
+    font-size: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 25px;
+    line-height: 40px;
   }
 }
 

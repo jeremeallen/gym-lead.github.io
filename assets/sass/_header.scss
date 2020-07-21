@@ -10,8 +10,8 @@
 
 // Top header Start
 .top-header {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 0;
+	padding-bottom: 0;
 	border-bottom: 1px solid rgba(255,255,255,.12);
 }
 
@@ -44,7 +44,7 @@
 	background-color: transparent;
 	border: none;
 	padding-right: 0;
-	padding: 0;
+	padding: 15px 0;
 	word-spacing: 1px;
 }
 
@@ -68,6 +68,7 @@
 
 .top-header .table-borderless th {
 	padding-right: 30px;
+	font-weight: 600;
 }
 
 .top-header .table-borderless th a, .top-header .table-borderless td a {

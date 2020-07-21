@@ -1,20 +1,95 @@
+@use 'variables' as *;
+
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199px) {
+
+    // Home Page Start
+    .top-header h2 span {
+        display: block;
+    }
+    .hero-text h1 {
+        font-size: 45px;
+    }
+    .btn-nav-request {
+        font-size: 18px!important;
+    }
+    // Home Page End
 
 }
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991px) {
+    .desktop-only {
+        display: none;
+    }
+
+    // Home Page Start
+    .top-header h2 span {
+        display: none;
+    }
+    .top-header table {
+        width: 300px;
+    }
     .fixed-top {
-        background-color: #252525;
+        background-color: $theme-color-alt;
+    }
+    .navbar-collapse {
+        background-color: $theme-color-alt;
+        padding-bottom: 35px;
     }
     .navbar-light .navbar-toggler {
         color: #ddd;
     }
+    .hero-text h1 {
+        font-size: 50px;
+    }
+    .select-tournament-form {
+        margin-bottom: inherit;
+    }
+    .select-tournament {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    // Home Page End
+
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767px) {
+
+    .my-btn {
+        font-size: 18px;
+    }
+
+    // Home Start
+    .title-default {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .title-helper {
+        font-size: 18px;
+    }
+    .hero-text h1 {
+        font-size: 40px;
+    }
+    .select-tournament-form {
+        margin-top: -190px;
+    }
+    .testimonials .carousel-item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer-top h3 {
+        font-size: 18px;
+    }
+    .footer-top h5 {
+        font-size: 16px;
+    }
+    .tournaments-box h3 {
+        font-size: 20px;
+    }
+    // Home End
 
 }
 
@@ -22,5 +97,14 @@
 @media (max-width: 575px) {
     section {
         padding: 30px 0;
+    }
+
+    // Home Start
+    .top-header h2 a {
+        font-size: 15px;
+    }
+    .hero-text h1 {
+        font-size: 25px;
+        line-height: 40px;
     }
 }
