@@ -480,6 +480,7 @@ a:hover {
 .testimonials p {
   color: #fff;
   font-size: 20px;
+  line-height: 30px;
 }
 
 .testimonials h5 {
@@ -715,6 +716,11 @@ a:hover {
   .tournaments-box h3 {
     font-size: 20px;
   }
+
+  .carousel-control-next, .carousel-control-prev {
+    bottom: inherit;
+    top: 40px;
+  }
 }
 @media (max-width: 575px) {
   section {
@@ -756,6 +762,15 @@ a:hover {
     padding: 20px;
     text-align: center;
     margin-bottom: inherit;
+  }
+
+  .testimonials p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .testimonials h5 {
+    font-size: 18px;
   }
 }
 @media (max-width: 365px) {
