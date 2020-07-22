@@ -37,19 +37,28 @@ i.material-icons {
 .top-header h2 span {
 	font-size: 15px;
 	font-family: $body-font;
-	font-weight: 300;
+	font-weight: 500;
 }
 
-.top-header button {
-	font-size: 15px;
-	font-family: $title-font;
-	text-transform: uppercase;
-	font-style: italic;
+.top-header .btn-dropdown {
 	background-color: transparent;
 	border: none;
-	padding-right: 0;
+	color: #fff;
 	padding: 15px 0;
+}
+
+.top-header .desktop-only {
+	font-family: $title-font;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-style: italic;
 	word-spacing: 1px;
+}
+
+.top-header .mobile-desktop {
+	font-family: $body-font;
+	font-weight: 500;
+	margin-left: 10px;
 }
 
 .top-header button:hover,
@@ -58,12 +67,6 @@ i.material-icons {
 .top-header button:visited {
 	background-color: transparent!important;
 	box-shadow: none!important;
-}
-
-.top-header button span {
-	font-style: normal;
-	text-transform: capitalize;
-	margin-left: 10px;
 }
 
 .top-header .table {
@@ -90,11 +93,11 @@ i.material-icons {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-.navbar {
+.main-navbar .navbar {
 	padding: 0;
 }
 
-.navbar-toggler:focus {
+.main-navbar .navbar-toggler:focus {
 	outline: none;
 }
 
@@ -116,7 +119,7 @@ i.material-icons {
 	        transition: all 0.5s;	
 }
 
-.navbar-light .navbar-nav .nav-link {
+.main-navbar .navbar-light .navbar-nav .nav-link {
 	color: #fff;
 	font-size: 18px;
 	text-transform: uppercase;
@@ -129,12 +132,12 @@ i.material-icons {
 	font-family: $title-font;
 }
 
-.navbar-light .navbar-nav .nav-link.active {
+.main-navbar .navbar-light .navbar-nav .nav-link.active {
 	color: #fff;
 	border-bottom: 2px solid $theme-color;
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.main-navbar .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
 	color: #ddd;
 }
 
@@ -150,30 +153,30 @@ i.material-icons {
     letter-spacing: 1px!important;
 }
 
-.dropdown-menu {
+.main-navbar .dropdown-menu {
 	background-color: $theme-color-alt;
 	margin: 0;
 	border-top: none;
 	border-radius: 0;
 }
 
-.dropdown-item {
+.main-navbar .dropdown-item {
 	color: #fff;
 	font-size: 18px;
 	font-family: $title-font;
 }
 
-.dropdown-item:hover {
+.main-navbar .dropdown-item:hover {
 	background-color: transparent;
 	color: #ddd;
 }
 
-.dropdown .nav-link {
+.main-navbar .dropdown .nav-link {
 	position: relative;
 	margin-right: 15px;
 }
 
-#navigation i.material-icons {
+.main-navbar i.material-icons {
 	position: absolute;
 	top: 50%;
 	right: -15px;
