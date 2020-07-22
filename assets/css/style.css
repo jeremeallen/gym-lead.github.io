@@ -133,6 +133,10 @@ a:hover {
   z-index: 999999999;
 }
 
+i.material-icons {
+  vertical-align: middle;
+}
+
 .top-header {
   padding-top: 0;
   padding-bottom: 0;
@@ -285,6 +289,18 @@ a:hover {
 .dropdown-item:hover {
   background-color: transparent;
   color: #ddd;
+}
+
+.dropdown .nav-link {
+  position: relative;
+  margin-right: 15px;
+}
+
+#navigation i.material-icons {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
 }
 
 .hero-section {
@@ -565,6 +581,7 @@ a:hover {
   position: absolute;
   top: 6px;
   left: -25px;
+  font-size: 16px;
 }
 
 .nav-footer-social .nav-link {

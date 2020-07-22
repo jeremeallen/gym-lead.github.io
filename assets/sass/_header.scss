@@ -8,6 +8,10 @@
 	z-index: 999999999;
 }
 
+i.material-icons {
+	vertical-align: middle;
+}
+
 // Top header Start
 .top-header {
 	padding-top: 0;
@@ -162,6 +166,18 @@
 .dropdown-item:hover {
 	background-color: transparent;
 	color: #ddd;
+}
+
+.dropdown .nav-link {
+	position: relative;
+	margin-right: 15px;
+}
+
+#navigation i.material-icons {
+	position: absolute;
+	top: 50%;
+	right: -15px;
+	transform: translateY(-50%);
 }
 
 // Main Navbar End
