@@ -8,10 +8,6 @@
 	z-index: 999999999;
 }
 
-i.material-icons {
-	vertical-align: middle;
-}
-
 // Top header Start
 .top-header {
 	padding-top: 0;
@@ -45,6 +41,15 @@ i.material-icons {
 	border: none;
 	color: #fff;
 	padding: 15px 0;
+	position: relative;
+	margin-right: 22px;
+}
+
+.top-header .btn-dropdown i {
+	position: absolute;
+	top: 50%;
+	right: -22px;
+	transform: translateY(-50%);
 }
 
 .top-header .desktop-only {
@@ -102,7 +107,7 @@ i.material-icons {
 }
 
 .main-navbar .navbar-brand img {
-	width: 100px;
+	width: 120px;
 }
 
 .fixed-top .navbar-brand img {
@@ -173,13 +178,13 @@ i.material-icons {
 
 .main-navbar .dropdown .nav-link {
 	position: relative;
-	margin-right: 15px;
+	margin-right: 12px;
 }
 
 .main-navbar i.material-icons {
 	position: absolute;
 	top: 50%;
-	right: -15px;
+	right: -12px;
 	transform: translateY(-50%);
 }
 

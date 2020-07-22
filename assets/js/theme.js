@@ -14,7 +14,7 @@ $(function(){
 	}
 
 	// Backstretch Slider
-	$.backstretch([
+	$("#hero").backstretch([
 		"assets/images/slider/banner-kickboxing-1.jpg",
 		"assets/images/slider/Inferno-Martial-Arts.jpg",
 		"assets/images/slider/Inferno-Martial-Arts_Header-Banner.jpg"
