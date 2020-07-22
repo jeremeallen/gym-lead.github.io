@@ -60,6 +60,10 @@ a:hover {
 	background-color: $color-trans;
 }
 
+.bg-theme-color {
+	background-color: $theme-color;
+}
+
 // Title Styles
 .title-default {
 	font-family: $title-font;

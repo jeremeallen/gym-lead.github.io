@@ -56,6 +56,10 @@ a:hover {
   background-color: transparent;
 }
 
+.bg-theme-color {
+  background-color: #f20000;
+}
+
 .title-default {
   font-family: "Ropa Sans", sans-serif;
   font-weight: 600;
@@ -126,7 +130,7 @@ a:hover {
   left: 0;
   width: 100%;
   top: 0;
-  z-index: 999999999;
+  z-index: 5;
 }
 
 .top-header {
@@ -361,7 +365,7 @@ a:hover {
   padding: 35px;
   margin-top: -100px;
   margin-bottom: -150px;
-  z-index: 10;
+  z-index: 3;
   position: relative;
 }
 
@@ -404,7 +408,7 @@ a:hover {
   bottom: 0;
   padding: 10px 35px;
   padding-top: 100px;
-  z-index: 5555;
+  z-index: 1;
   transition: 0.5s;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
 }
@@ -501,6 +505,143 @@ a:hover {
 
 .request-info p, .request-info .title-default, .request-info .title-helper {
   color: #fff;
+}
+
+#requestModal {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#requestModal .modal-body {
+  padding: 0;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+#requestModal .modal-body .close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 5;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  border-radius: 100%;
+  opacity: 1;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
+}
+
+#requestModal .modal-body .close span {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#requestModal .modal-body .close:active,
+#requestModal .modal-body .close:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.request-info-form {
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  background-color: #f20000;
+}
+
+.request-info-form .title-default, .request-info-form .title-helper, .request-info-form p {
+  color: #fff;
+}
+
+.request-info-form .title-default {
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+.request-info-form .title-helper {
+  font-size: 24px;
+}
+
+.request-info-form small {
+  line-height: 18px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.modal-fb-comments-wrapper {
+  padding: 15px;
+  max-height: 595px;
+  overflow-y: scroll;
+}
+
+.modal-fb-comments-wrapper img {
+  width: 40px;
+  height: auto;
+}
+
+.modal-fb-comments-wrapper h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.modal-fb-comment-box {
+  border: 1px solid #e5e6e9;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-fb-comment-box:after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/fb-logo.png");
+  background-size: cover;
+  position: absolute;
+  bottom: -30px;
+  right: -10px;
+}
+
+.modal-fb-comments-wrapper .name-user {
+  color: #365899;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.modal-fb-comments-wrapper .name-page {
+  color: #365899;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.modal-fb-comments-wrapper .star-rating {
+  background-color: #5890FF;
+  padding: 0 5px;
+  color: #fff;
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.modal-fb-comments-wrapper .star-rating i {
+  font-size: 10px;
+}
+
+.fb-user-comments {
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #000;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .footer-top {
@@ -676,6 +817,15 @@ a:hover {
   .select-tournament {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .order-mobile-last {
+    order: 1;
+  }
+
+  #requestModal .modal-body .close {
+    top: -4px;
+    right: -4px;
   }
 }
 @media (max-width: 767px) {

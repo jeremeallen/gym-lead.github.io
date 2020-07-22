@@ -54,6 +54,13 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+    .order-mobile-last {
+        order: 1;
+    }
+    #requestModal .modal-body .close {
+        top: -4px;
+        right: -4px;
+    }
     
     // Home Page End
 
